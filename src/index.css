@@ -60,9 +60,15 @@ code {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
+  background: radial-gradient(circle at center, #ffffff, #AAF4D7);
 }
 .App__left{
-  flex:0.9;
+  flex:0.5;
+  margin: 20px 30px;
+}
+.App__right{
+  flex:0.5;
+  margin: 20px 10px;
 }
 @media (max-width: 990px) {
   .App {
@@ -79,10 +85,14 @@ code {
 }
 
 .table{
+  width: 100%;
   margin-top: 20px;
   overflow-y: scroll;
-  height: 600px;
+  height: 420px;
 
+}
+.infobox{
+  flex:1;
 }
 .table__body{
 /* background-color: red; */
@@ -100,7 +110,7 @@ justify-content: space-between;
 
 
 .map {
-  height: 500px;
+  height: 300px;
   background-color: white;
   padding: 1rem;
   border-radius: 20px;
