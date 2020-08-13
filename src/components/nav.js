@@ -1,9 +1,9 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Redirect, Switch, Link, LinkProps } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 
 import Tabs from '@material-ui/core/Tabs';
-import { default as Tab, TabProps } from '@material-ui/core/Tab';
+import { default as Tab } from '@material-ui/core/Tab';
 
 import Home from '../home';
 import FinalGlobe from '../FinalGlobe'
