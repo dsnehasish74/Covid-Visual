@@ -57,7 +57,7 @@ function Home() {
         setCountryInfo(data)
         setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
         setMapZoom(4);
-        setCasesType("Cases")
+        // setCasesType("Cases")
       })
 
     };
