@@ -60,7 +60,7 @@ code {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
-  background: radial-gradient(circle at center, #ffffff, #AAF4D7);
+  background: radial-gradient(circle at center,#6dd5ed, #2193b0);
 }
 .App__left{
   flex:0.5;
