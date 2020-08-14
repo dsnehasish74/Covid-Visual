@@ -67,7 +67,7 @@ function Home() {
 
       <div className="App__left">
           <div className="app__header">
-            <h1>Covid-19-Tracker </h1>
+            <h1 className="apphead">Covid-19-Tracker </h1>
             <FormControl className="app__dropdown">
                 <Select value={country} varient="outlined" onChange={onCountryChange}>
                   <MenuItem value="worldwide" >Worldwide</MenuItem>
@@ -87,7 +87,7 @@ function Home() {
           <div className="stats">
               <InfoBox title="Total" newcase={numeral(countryInfo.todayCases).format("0,0")} totalcase={numeral(countryInfo.cases).format("0,0")} color="red"/>
 
-              <InfoBox title="Recoverd" newcase={numeral(countryInfo.todayRecovered).format("0,0")} totalcase={numeral(countryInfo.recovered).format("0,0")} color="green"/>
+              <InfoBox title="Recovered" newcase={numeral(countryInfo.todayRecovered).format("0,0")} totalcase={numeral(countryInfo.recovered).format("0,0")} color="green"/>
               <InfoBox title="Deaths" newcase={numeral(countryInfo.todayDeaths).format("0,0")} totalcase={numeral(countryInfo.deaths).format("0,0")} color="grey"/>
               <InfoBox title="Active" newcase={numeral(countryInfo.todayCases).format("0,0")} totalcase={numeral(countryInfo.active).format("0,0")} color="blue"/>
           </div>
