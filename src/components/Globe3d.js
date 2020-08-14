@@ -15,7 +15,7 @@ function Globe3d() {
     const [countries, setCountries] = useState([]);
     const [hoverD, setHoverD] = useState();
     const [{lat, lng}, setCoordinates] = useState({lat: null, lng: null});
-    const colorScale = d3.scaleSequentialSqrt(d3.interpolateRdBu);
+    const colorScale = d3.scaleSequentialSqrt(d3.interpolateRdYlGn);
     const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
     useEffect(() => {
