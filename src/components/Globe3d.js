@@ -15,7 +15,7 @@ function Globe3d() {
     const [countries, setCountries] = useState([]);
     const [hoverD, setHoverD] = useState();
     const [{lat, lng}, setCoordinates] = useState({lat: null, lng: null});
-    const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
+    const colorScale = d3.scaleSequentialSqrt(d3.interpolateRdBu);
     const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
     useEffect(() => {
@@ -43,7 +43,7 @@ function Globe3d() {
             polygonAltitude = {0.06}
             polygonSideColor={() => 'rgba(0, 100, 0, 0.05)'}
             polygonsTransitionDuration={200}
-            polygonCapColor={d => d === hoverD ? 'steelblue' : colorScale(getVal(d))}
+            polygonCapColor={d => d === hoverD ? 'black' : colorScale(getVal(d))}
             polygonsData={countries}
             onPolygonHover={setHoverD}
             pointOfView = {{lat, lng, altitude: 1000}}
