@@ -63,7 +63,7 @@ function Home() {
     };
   return (
     <div>
-      <div className="App">
+      <div className="App fade">
 
       <div className="App__left">
           <div className="app__header">

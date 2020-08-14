@@ -1,19 +1,16 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
-
+import {Link} from 'react-router-dom'
 import Tabs from '@material-ui/core/Tabs';
 import { default as Tab } from '@material-ui/core/Tab';
 
-import Home from '../home';
-import FinalGlobe from '../FinalGlobe'
 
 
 
 
- 
 
-function NavBar() {
+
+export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = ( ChangeEvent, newValue) => {
@@ -23,26 +20,11 @@ function NavBar() {
     <div >
       <AppBar position="static" color="default" >
         <Tabs value={value} onChange={handleChange} centered>
-          <Tab label='Home'  component={Link} to="/home" />
+          <Tab label='Home'  component={Link} to="/" />
           <Tab label='Dashboard'  component={Link} to="/FinalGlobe" />
-          <Tab label='Aboutus'  component={Link} to="" />
+          <Tab label='Aboutus'  component={Link} to="/aboutus" />
         </Tabs>
       </AppBar>
     </div>
   )
 };
-
-export default function IconLabelTabs() {
-  return (
-    <Router>
-      <div>
-        <NavBar />
-        <Switch>
-          <Route  path="/home" component={ Home } />
-          <Route exact path="/FinalGlobe" component={ FinalGlobe } />
-          <Redirect from="/" to="/home" />
-        </Switch>
-      </div>
-    </Router>
-  )
-}

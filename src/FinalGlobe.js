@@ -4,7 +4,7 @@ import Globe from  './components/Globe3d';
 
 function FinalGlobe() {
   return (
-    <div >
+    <div className="fade">
      <Globe/>
     </div>
   );
