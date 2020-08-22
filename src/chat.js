@@ -45,6 +45,7 @@ export default function SimpleModal() {
   const body = (
     <div style={modalStyle} className={classes.paper}>
     <iframe
+    title="chatbox"
     allow="microphone;"
     width="350"
     height="430"
