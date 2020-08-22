@@ -279,8 +279,15 @@ justify-content: space-between;
   }
 }
 .chatbox{
-  position:absolute;
+  position: absolute;
   right:20px;
-  buttom:20px;
-  z-index:100;
+  bottom:30px;
+}
+.chatbutton{
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 100%;
+  border-style: none;
+  box-shadow: 0 0 8px -4px #ffffff;
+  background-color: #97c74e;
 }
