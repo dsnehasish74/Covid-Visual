@@ -5,6 +5,7 @@ import Table from './table.js'
 import numeral from "numeral";
 import Map from "./map";
 import "leaflet/dist/leaflet.css";
+import SimpleModal from './chat.js'
 
 function Home() {
   const [countries,setCountries]=useState([])
@@ -108,16 +109,11 @@ function Home() {
           </Card>
       </div>
 
-      <iframe
-    className="chatbox"
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/5a9e410b-64f3-457f-9b48-c70e0d48e339">
-</iframe>
       
       </div>
-
+<div className="chatbox">
+      <SimpleModal/>
+      </div>
     </div>
   );
 }
