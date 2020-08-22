@@ -278,3 +278,9 @@ justify-content: space-between;
     opacity: 1;
   }
 }
+.chatbox{
+  position:absolute;
+  right:20px;
+  buttom:20px;
+  z-index:100;
+}
