@@ -1,3 +1,4 @@
+![grab-landing-page](https://github.com/dsnehasish74/Covid-Visual/src/20201019_140124.gif)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
